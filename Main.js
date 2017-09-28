@@ -34,10 +34,13 @@ function Villagerclick(number){
 var Dower = 0;
 
 function BuyDower(){
-	var Dowercost = Math.floor(10 * Math.pow(1.1,Dower));
-        if(Villager >= Dowercost){
+	var Dowercost = Math.floor(1 * Math.pow(1.1,Dower));
+        if(cookies >= Dowercost){
         Dower = Dower + 1;
-        Villager = Villager - Dowercost;
+        cookies = cookies - Dowercost;
         document.getElementById('Dower').innerHTML = Dower;
+        document.getElementById('Dower').innerHTML = Dower;
+};
+};
 };
 };
