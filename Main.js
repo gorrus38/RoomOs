@@ -1,5 +1,4 @@
 var cookies = 0;
-
 function cookieClick(number){
     cookies = cookies + number;
     document.getElementById("cookies").innerHTML = cookies;
@@ -24,3 +23,21 @@ window.setInterval(function(){
 	cookieClick(cursors);
 	
 }, 1000);
+
+var Villager = 0;
+
+function Villagerclick(number){
+    Villager = Villager + number;
+    document.getElementById("Villager").innerHTML = Villager;
+};
+
+var Dower = 0;
+
+function BuyDower(){
+	var Dowercost = Math.floor(10 * Math.pow(1.1,Dower));
+        if(Villager >= Dowercost){
+        Dower = Dower + 1;
+        Villager = Villager - Dowercost;
+        document.getElementById('Dower').innerHTML = Dower;
+};
+};
