@@ -21,7 +21,7 @@ function buyCursor(){
 window.setInterval(function(){
 	
 	cookieClick(cursors);
-	
+	Villagerclick(Dower)
 }, 1000);
 
 var Villager = 0;
@@ -42,5 +42,4 @@ function BuyDower(){
         document.getElementById('Dower').innerHTML = Dower;
 };
 };
-};
-};
+
