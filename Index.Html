@@ -60,24 +60,27 @@ div.tab button.active {
 <body>
 <!----Tabs---->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Village')">Village</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'Help')">Help</button>
 </div>
 
-<div id="London" class="tabcontent">
+<div id="Village" class="tabcontent">
 <button class="button" onclick="buyCursor()">Add funds</button>
 Cursors: <span id="cursors">0</span>
 <br />
 Cursor Cost: <span id="cursorCost">10</span></br>
 <button class="button" onclick="cookieClick(1)">Cookies</button>
-<span id="cookies">0</span>
+Cookies: <span id="cookies">0</span>
 <br />
-<button class="button" onclick="Villagerclick(1)">Add Villagers</button>
-<span id ="Villager">0</span></br>
+Villagers: <span id ="Villager">0</span></br>
 <button class="button" onclick="BuyDower()">Add funds</button>
 Dower:<span id="Dower">0</span></br>
-Dower: <span id="Dowercost">10</span></br>
+Dower per cookie: <span id="Dowercost">1</span></br>
+</div>
+<div id="Help" class="tabcontent">
+<center><h1>Help</h1></center>
+   <p>Welcome to Help! this is where you can find ot how to play!</p>
 </div>
 <script>
 function openCity(evt, cityName) {
