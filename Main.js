@@ -34,7 +34,7 @@ function Villagerclick(number){
 var Dower = 0;
 
 function BuyDower(){
-	var Dowercost = Math.floor(1 * Math.pow(1.1,Dower));
+	var Dowercost = Math.floor(1));
         if(cookies >= Dowercost){
         Dower = Dower + 1;
         cookies = cookies - Dowercost;
